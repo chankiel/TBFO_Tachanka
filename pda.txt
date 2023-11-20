@@ -1,0 +1,18 @@
+init html 
+<html> <head>
+
+START <html> Z HTML </html>Z
+HTMLB </html> </html> FINISH e
+
+// HEAD //
+HTML <head> </html> HEAD </head>
+
+HEAD <title> </head> TITLE </title></head>
+TITLE </title> </title> HEADT e
+HEAD
+
+HEAD </head> </head> HTMLH </htmlH>
+
+HTMLH <body> </htmlH> BODY </body>
+
+
