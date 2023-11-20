@@ -9,7 +9,36 @@ HTML <head> </html> HEAD </head>
 
 HEAD <title> </head> TITLE </title></head>
 TITLE </title> </title> HEADT e
-HEAD
+
+HEAD <script </head> SCRIPT </script></head>
+HEAD <script </title> SCRIPT </script></tail>
+
+SCRIPT src=" </script> SCRIPT </src></script>
+SCRIPT url </src> SCRIPT </url>
+SCRIPTurl "> </url></script> HEAD e
+
+HEAD <link </head> LINK </link></head>
+HEAD <link </title> LINK </link></title>
+
+LINK rel=" </link> LINK </rel></link>
+LINKrel url </rel> LINKrel </url>
+LINKrel " </rel> LINK </rel>
+LINK href=" </link> LINK </href></link>
+LINK url
+
+ 
+
+HEAD </head> </title> HTML </title>
+
+HTML <body> </title> BODY </body></title>
+
+
+
+
+
+
+
+
 
 HEAD </head> </head> HTMLH </htmlH>
 
