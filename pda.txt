@@ -1,0 +1,70 @@
+init html 
+<html> <head>
+
+ATRIBUT id="" e ATRIBUT e
+ATRIBUT class="" e ATRIBUT e
+ATRIBUT style="" e ATRIBUT e
+ATRIBUT href="" </link> ATRIBUT </link>
+ATRIBUT href="" </validLink> ATRIBUT </validLink>
+ATRIBUT rel="" </link> ATRIBUT </validLink>
+
+CONTENT <br> e CONTENT e
+CONTENT <b> e CONTENT </b>
+
+CONTENT <em> e CONTENT e
+CONTENT <b> </content> CONTENT </b></content>
+CONTENT </b> </b> CONTENT e
+CONTENT <b> </content> CONTENT </b></content>
+CONTENT </b> </b> CONTENT e
+CONTENT <b> </content> CONTENT </b></content>
+CONTENT </b> </b> CONTENT e
+
+START <html <Z> ATRIBUT </html><Z>
+ATRIBUT > </html> HTML </html>
+
+HTML <head </html> ATRIBUT </head></html>
+ATRIBUT > </head> HEAD </head>
+
+HEAD <title </head> ATRIBUT </title></head>
+ATRIBUT > </title> HEAD </title>
+HEAD </title> </title> HEAD e
+
+HEAD <script </head> ATRIBUT </script></head>
+ATRIBUT > </script> HEAD </script>
+HEAD </script> </script> HEAD e
+
+HEAD <link </head> ATRIBUT </link></head>
+ATRIBUT > </validLink> HEAD e
+
+HEAD </head> </head> HTMLH e
+
+HTMLH <body </html> ATRIBUT </body></html>
+ATRIBUT > </body> BODY </body>
+
+BODY <h1 </body> ATRIBUT </h1></body>
+ATRIBUT > </h1> CONTENT </content></h1>
+CONTENT </h1> </content></h1> BODY e
+
+BODY <h2 </body> ATRIBUT </h2></body>
+ATRIBUT > </h2> CONTENT </content></h2>
+CONTENT </h2> </content></h2> BODY e
+
+BODY <h3 </body> ATRIBUT </h3></body>
+ATRIBUT > </h3> CONTENT </content></h3>
+CONTENT </h3> </content></h3> BODY e
+
+BODY <h4 </body> ATRIBUT </h4></body>
+ATRIBUT > </h4> CONTENT </content></h4>
+CONTENT </h4> </content></h4> BODY e
+
+BODY <h5 </body> ATRIBUT </h5></body>
+ATRIBUT > </h5> CONTENT </content></h5>
+CONTENT </h5> </content></h5> BODY e
+
+BODY <h6 </body> ATRIBUT </h6></body>
+ATRIBUT > </h6> CONTENT </content></h6>
+CONTENT </h6> </content></h6> BODY e
+
+BODY <p </body> ATRIBUT </p></body>
+ATRIBUT > </p> CONTENT </content></p>
+CONTENT </p> </content></p> BODY e
