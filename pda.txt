@@ -8,6 +8,63 @@ ATRIBUT href="" </link> ATRIBUT </link>
 ATRIBUT href="" </validLink> ATRIBUT </validLink>
 ATRIBUT rel="" </link> ATRIBUT </validLink>
 
+ATRIBUT_A id="" e ATRIBUT_A e
+ATRIBUT_A class="" e ATRIBUT_A e
+ATRIBUT_A style="" e ATRIBUT_A e
+ATRIBUT_A href="" </link> ATRIBUT_A </link>
+ATRIBUT_A href="" </validLink> ATRIBUT_A </validLink>
+ATRIBUT_A rel="" </link> ATRIBUT_A </validLink>
+
+ATRIBUT_IMG id="" e ATRIBUT_IMG e
+ATRIBUT_IMG class="" e ATRIBUT_IMG e
+ATRIBUT_IMG style="" e ATRIBUT_IMG e
+ATRIBUT_IMG src="" e ATRIBUT_IMG e
+ATRIBUT_IMG href="" </link> ATRIBUT_IMG </link>
+ATRIBUT_IMG href="" </validLink> ATRIBUT_IMG </validLink>
+ATRIBUT_IMG rel="" </link> ATRIBUT_IMG </validLink>
+
+ATRIBUT_BUTTON id="" e ATRIBUT_BUTTON e
+ATRIBUT_BUTTON class="" e ATRIBUT_BUTTON e
+ATRIBUT_BUTTON style="" e ATRIBUT_BUTTON e
+ATRIBUT_BUTTON type="" e ATRIBUT_BUTTON e
+ATRIBUT_BUTTON href="" </link> ATRIBUT_BUTTON </link>
+ATRIBUT_BUTTON href="" </validLink> ATRIBUT_BUTTON </validLink>
+ATRIBUT_BUTTON rel="" </link> ATRIBUT_BUTTON </validLink>
+
+ATRIBUT_FORM id="" e ATRIBUT_FORM e
+ATRIBUT_FORM class="" e ATRIBUT_FORM e
+ATRIBUT_FORM style="" e ATRIBUT_FORM e
+ATRIBUT_FORM action="" e ATRIBUT_FORM e
+ATRIBUT_FORM method="" e ATRIBUT_FORM e
+ATRIBUT_FORM href="" </link> ATRIBUT_FORM </link>
+ATRIBUT_FORM href="" </validLink> ATRIBUT_FORM </validLink>
+ATRIBUT_FORM rel="" </link> ATRIBUT_FORM </validLink>
+
+ATRIBUT_INPUT id="" e ATRIBUT_INPUT e
+ATRIBUT_INPUT class="" e ATRIBUT_INPUT e
+ATRIBUT_INPUT style="" e ATRIBUT_INPUT e
+ATRIBUT_INPUT type="" e ATRIBUT_INPUT e
+ATRIBUT_INPUT href="" </link> ATRIBUT_INPUT </link>
+ATRIBUT_INPUT href="" </validLink> ATRIBUT_INPUT </validLink>
+ATRIBUT_INPUT rel="" </link> ATRIBUT_INPUT </validLink>
+
+TABLE_ATR id="" e TABLE_ATR e
+TABLE_ATR class="" e TABLE_ATR e
+TABLE_ATR style="" e TABLE_ATR e
+TABLE_ATR href="" </link> TABLE_ATR </link>
+TABLE_ATR href="" </validLink> TABLE_ATR </validLink>
+TABLE_ATR rel="" </link> TABLE_ATR </validLink>
+TABLE_CONTENT <tr </body> TABLE_ATR </tr></body>
+TABLE_ATR > </tr> CONTENT </content></tr>
+CONTENT </tr> </content></tr> TABLE_CONTENT e
+TABLE_CONTENT <td </body> TABLE_ATR </td></body>
+TABLE_ATR > </td> CONTENT </content></td>
+CONTENT </td> </content></td> TABLE_CONTENT e
+TABLE_CONTENT <th </body> TABLE_ATR </th></body>
+TABLE_ATR > </th> CONTENT </content></th>
+CONTENT </th> </content></th> TABLE_CONTENT e
+
+
 CONTENT <br> e CONTENT e
 CONTENT <b> e CONTENT </b>
 
@@ -68,3 +125,64 @@ CONTENT </h6> </content></h6> BODY e
 BODY <p </body> ATRIBUT </p></body>
 ATRIBUT > </p> CONTENT </content></p>
 CONTENT </p> </content></p> BODY e
+
+BODY <em </body> ATRIBUT </em></body>
+ATRIBUT > </em> CONTENT </content></em>
+CONTENT </em> </content></em> BODY e
+
+BODY <b </body> ATRIBUT </b></body>
+ATRIBUT > </b> CONTENT </content></b>
+CONTENT </b> </content></b> BODY e
+
+BODY <abbr </body> ATRIBUT </abbr></body>
+ATRIBUT > </abbr> CONTENT </content></abbr>
+CONTENT </abbr> </content></abbr> BODY e
+
+BODY <strong </body> ATRIBUT </strong></body>
+ATRIBUT > </strong> CONTENT </content></strong>
+CONTENT </strong> </content></strong> BODY e
+
+BODY <small </body> ATRIBUT </small></body>
+ATRIBUT > </small> CONTENT </content></small>
+CONTENT </small> </content></small> BODY e
+
+BODY <div </body> ATRIBUT </div></body>
+ATRIBUT > </div> CONTENT </content></div>
+CONTENT </div> </content></div> BODY e
+
+BODY <a </body> ATRIBUT_A </a></body>
+ATRIBUT_A > </a> CONTENT </content></a>
+CONTENT </a> </content></a> BODY e
+
+BODY <img </body> ATRIBUT_IMG_NOSRC </img></body>
+ATRIBUT_IMG_NOSRC src="" e ATRIBUT_IMG e
+ATRIBUT_IMG_NOSRC id="" e ATRIBUT_IMG_NOSRC e
+ATRIBUT_IMG_NOSRC class="" e ATRIBUT_IMG_NOSRC e
+ATRIBUT_IMG_NOSRC style="" e ATRIBUT_IMG_NOSRC e
+ATRIBUT_IMG_NOSRC href="" </link> ATRIBUT_IMG_NOSRC </link>
+ATRIBUT_IMG_NOSRC href="" </validLink> ATRIBUT_IMG_NOSRC </validLink>
+ATRIBUT_IMG_NOSRC rel="" </link> ATRIBUT_IMG_NOSRC </validLink>
+ATRIBUT_IMG > </img> CONTENT </content></img>
+CONTENT </img> </content></img> BODY e
+
+BODY <button </body> ATRIBUT_BUTTON </button></body>
+ATRIBUT_BUTTON > </button> CONTENT </content></button>
+CONTENT </button> </content></button> BODY e
+
+BODY <form </body> ATRIBUT_FORM </form></body>
+ATRIBUT_FORM > </form> CONTENT </content></form>
+CONTENT </form> </content></form> BODY e
+
+BODY <input </body> ATRIBUT_INPUT </input></body>
+ATRIBUT_INPUT > </input> CONTENT </content></input>
+CONTENT </input> </content></input> BODY e
+
+BODY <table </body> TABLE_ATR </table></body>
+TABLE_ATR > </table> TABLE_CONTENT </table_content></table>
+TABLE_CONTENT </table> </table_content></table> BODY e
+
+
+
+
+
+
