@@ -1,0 +1,64 @@
+                for c in tempTag:
+                    if(c == "<"):
+                        tempAtt += c
+                    elif(c == ">"):
+                        listFile.append(tempAtt)
+                        listFile.append(">")
+                        tempAtt = ""
+                    elif(c == " "):
+                        xc = len(tempAtt)
+                        if(xc!= 0):
+                            if(tempAtt[-1] == " "):
+                                pass
+                            else:
+                                tempAtt += c
+                    elif(c == "="):                  
+                        xc = len(tempAtt)
+                        if(xc!= 0):
+                            if(tempAtt[-1] == " "):
+                                tempAtt = tempAtt.replace(" ", "=")
+                            else:
+                                tempAtt += c
+                    elif(c == "\""):
+                                                xc = len(tempAtt)
+                        if(xc!= 0):
+                            if(tempAtt[-1] == " "):
+                                tempAtt = tempAtt.replace(" ", "=")
+                            else:
+                                tempAtt += c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                tempAtt = ""
+                for c in tempTag:
+                    if(c == " "):
+                        if(len(tempAtt) != 0):
+                            if(tempAtt[0] == "<"):
+                                listFile.append(tempAtt)
+                                tempAtt = ""
+                            else:
+                                if(tempAtt[-1] == "="):
+                                    pass
+                                elif(len(tempAtt) > 1):
+                                    if(tempAtt[-1] == "\"" and tempAtt[-2] == "\""):
+                                        listFile.append(tempAtt)
+                                        tempAtt = ""
+                    else:
+                        if(len(tempAtt) != 0):
+                            if(tempAtt[-1] == "\""):
+                                pass
+                            else:
+                                tempAtt += c
