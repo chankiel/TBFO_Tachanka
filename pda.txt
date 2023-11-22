@@ -127,32 +127,26 @@ ATRIBUT > </p> CONTENT </content></p>
 CONTENT </p> </content></p> BODY e
 
 BODY <em </body> ATRIBUT </em></body>
-ATRIBUT > </em> CONTENT </content></em>
-CONTENT </em> </content></em> BODY e
+ATRIBUT > </em> BODY </body></em>
 
 BODY <b </body> ATRIBUT </b></body>
-ATRIBUT > </b> CONTENT </content></b>
-CONTENT </b> </content></b> BODY e
+ATRIBUT > </b> BODY </body></b>
 
 BODY <abbr </body> ATRIBUT </abbr></body>
-ATRIBUT > </abbr> CONTENT </content></abbr>
-CONTENT </abbr> </content></abbr> BODY e
+ATRIBUT > </abbr> BODY </body></abbr>
 
 BODY <strong </body> ATRIBUT </strong></body>
-ATRIBUT > </strong> CONTENT </content></strong>
-CONTENT </strong> </content></strong> BODY e
+ATRIBUT > </strong> BODY </body></strong>
 
 BODY <small </body> ATRIBUT </small></body>
-ATRIBUT > </small> CONTENT </content></small>
-CONTENT </small> </content></small> BODY e
+ATRIBUT > </small> BODY </body></small>
 
 BODY <div </body> ATRIBUT </div></body>
-ATRIBUT > </div> CONTENT </content></div>
-CONTENT </div> </content></div> BODY e
+ATRIBUT > </div> BODY </body></div>
 
 BODY <a </body> ATRIBUT_A </a></body>
-ATRIBUT_A > </a> CONTENT </content></a>
-CONTENT </a> </content></a> BODY e
+ATRIBUT_A > </a> BODY </body></a>
+
 
 BODY <img </body> ATRIBUT_IMG_NOSRC </img></body>
 ATRIBUT_IMG_NOSRC src="" e ATRIBUT_IMG e
@@ -162,20 +156,16 @@ ATRIBUT_IMG_NOSRC style="" e ATRIBUT_IMG_NOSRC e
 ATRIBUT_IMG_NOSRC href="" </link> ATRIBUT_IMG_NOSRC </link>
 ATRIBUT_IMG_NOSRC href="" </validLink> ATRIBUT_IMG_NOSRC </validLink>
 ATRIBUT_IMG_NOSRC rel="" </link> ATRIBUT_IMG_NOSRC </validLink>
-ATRIBUT_IMG > </img> CONTENT </content></img>
-CONTENT </img> </content></img> BODY e
+ATRIBUT_IMG > </img> BODY </body></img>
 
 BODY <button </body> ATRIBUT_BUTTON </button></body>
-ATRIBUT_BUTTON > </button> CONTENT </content></button>
-CONTENT </button> </content></button> BODY e
+ATRIBUT_BUTTON > </button> BODY </body></button>
 
 BODY <form </body> ATRIBUT_FORM </form></body>
-ATRIBUT_FORM > </form> CONTENT </content></form>
-CONTENT </form> </content></form> BODY e
+ATRIBUT_FORM > </form> BODY </body></form>
 
 BODY <input </body> ATRIBUT_INPUT </input></body>
-ATRIBUT_INPUT > </input> CONTENT </content></input>
-CONTENT </input> </content></input> BODY e
+ATRIBUT_INPUT > </input> BODY </body></input>e
 
 BODY <table </body> TABLE_ATR </table></body>
 TABLE_ATR > </table> TABLE_CONTENT </table_content></table>
