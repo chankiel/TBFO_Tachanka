@@ -1,6 +1,7 @@
 strFile = ""
 listFile = []
 listFile2 = []
+listFile3 = []
 listFinal = []
 tempTag = ""
 count = 0
@@ -24,11 +25,25 @@ with open('index.html', 'r') as file:
     strFile = content
 strFile=strFile.replace('\n', '')
 
+# dekomposisi awal pisahin tag awal(<tag>), isi, dan tag akhir(</tag>)
 for char in strFile:
     if(char == ">"):
         tempTag += ">"
-        listFile.append(tempTag)
-        tempTag = ""
+        if("<!--" in tempTag):
+            if("-->" in tempTag):
+                listFile.append("<!---->")
+                tempTag = ""
+            else:
+                tempTag += char
+        elif(tempTag.count("\"")%2 == 0):
+            listFile.append(tempTag)
+            tempTag = ""
+        elif(tempTag.count("\"")%2 == 1):
+            pass
+        else:
+            listFile.append(tempTag)
+            tempTag = ""
+
     elif(char == "<"):
         if(len(tempTag) == 0):
             tempTag += "<"
@@ -56,13 +71,30 @@ for i in range(len(listFile)):
             if(elmt[-2] == " "):
                 elmt = remove(elmt,-2)
                 listFile[i] = elmt
-print(listFile)
+print(listFile) # check proses 1
 print("\n")
+
+# clear isi
 for k in range(len(listFile)):
     elmt = listFile[k]
     if("<" == elmt[0] and ">" == elmt[-1]):
         listFile2.append(elmt)
+    else:
+        if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1])):
+            listFile2.append("X")
+        else:
+            pass
 print(listFile2)
+
+# # clear comment
+# for n in range(len(listFile2)):
+#     elmt = listFile2[n]
+#     if("<!--" in elmt and "-->" in elmt):
+#         pass
+#     else:
+#         listFile3.append(elmt)
+# print("\n")
+# print(listFile3)
 
 # dekomposisi open tag with att
 for j in range(len(listFile2)):
