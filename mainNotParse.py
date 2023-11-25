@@ -1,9 +1,10 @@
-# Jika parser membuang
 totalStates = []
 inputSymbols = []
 stackSymbols = []
 pdaStack = []
 pdaRules = {}
+prevStatus = True 
+# True jika menerima input parser
 
 with open('pda.txt', 'r') as filepda:
     contentpdaline = filepda.readlines()
@@ -40,6 +41,12 @@ for pdaline in contentpdaline:
 arr = parser("temp.txt")
 
 for val in arr:
+    if(val[0]=='<'):
+        prevStatus = True
+    elif(val[0]=='>'):
+        prevStatus = False
+    if(prevStatus==False):
+        continue
     top = pdaStack.pop()
     res = pdaRules.get((currentState,val,top),("NO_STATE","NO_TOP"))
     if(res == ("NO_STATE","NO_TOP")):

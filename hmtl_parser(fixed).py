@@ -103,6 +103,5 @@ for j in range(len(listFile)):
                         else:         
                             hasil += cc
 
-# print(listFile)
 listFinal.remove("")
 print(listFinal)
