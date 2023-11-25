@@ -6,7 +6,19 @@ ATRIBUT class="" X ATRIBUT X
 ATRIBUT style="" X ATRIBUT X 
 ATRIBUT href="" </link> ATRIBUT </link>
 ATRIBUT href="" </validLink> ATRIBUT </validLink>
+ATRIBUT href="" </a> ATRIBUT </a>
 ATRIBUT rel="" </link> ATRIBUT </validLink>
+-------------------------------------------------------------------
+HEAD <title </head> ATRIBUT </title></head>
+ATRIBUT > </title> HEAD </title>
+HEAD </title> </title> HEAD e
+
+HEAD <script </head> ATRIBUT </script></head>
+ATRIBUT > </script> HEAD </script>
+HEAD </script> </script> HEAD e
+
+HEAD <link </head> ATRIBUT </link></head>
+ATRIBUT > </validLink> HEAD e
 -------------------------------------------------------------------
 BODY <br X ATRIBUT </br>
 ATRIBUT > </br> BODY e
@@ -33,7 +45,7 @@ BODY </small> </small> BODY e
 
 BODY <hr X ATRIBUT </hr>
 ATRIBUT > </hr> BODY e
--------------------------------------------------------------------------
+
 BODY <div X ATRIBUT </div>
 ATRIBUT > </div> BODY </div>
 BODY </div> </div> BODY e
@@ -69,6 +81,12 @@ CONTENT </h6> </h6> BODY e
 BODY <p X ATRIBUT </p>
 ATRIBUT > </p> CONTENT </p>
 CONTENT </p> </p> BODY e
+
+BODY <link X ATRIBUT </link>
+ATRIBUT > </validLink> BODY e
+
+BODY <script X ATRIBUT </script>
+ATRIBUT > </script> BODY e
 ----------------------------------------------------------------------
 CONTENT <br X ATRIBUT </br>
 ATRIBUT > </br> CONTENT e
@@ -102,18 +120,10 @@ ATRIBUT > </html> HTML </html>
 HTML <head </html> ATRIBUT </head></html>
 ATRIBUT > </head> HEAD </head>
 
-HEAD <title </head> ATRIBUT </title></head>
-ATRIBUT > </title> HEAD </title>
-HEAD </title> </title> HEAD e
-
-HEAD <script </head> ATRIBUT </script></head>
-ATRIBUT > </script> HEAD </script>
-HEAD </script> </script> HEAD e
-
-HEAD <link </head> ATRIBUT </link></head>
-ATRIBUT > </validLink> HEAD e
-
 HEAD </head> </head> HTMLH e
 
 HTMLH <body </html> ATRIBUT </body></html>
 ATRIBUT > </body> BODY </body>
+
+BODY </body> </body> HTMLHB e
+HTMLHB </html> </html> FINISH e
