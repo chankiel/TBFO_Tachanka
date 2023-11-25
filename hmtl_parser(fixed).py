@@ -123,9 +123,17 @@ for j in range(len(listFile2)):
                                 listFinal.append(hasil)
                                 hasil = ""
                     elif(cc == ">"):
-                        listFinal.append(hasil)
-                        listFinal.append(">")
-                        hasil = ""
+                        if("=" in hasil):
+                            if(hasil.count("\"")%2 == 0):
+                                listFile.append(hasil)
+                                listFile.append(">")
+                                hasil = ""
+                            elif(hasil.count("\"")%2 == 1):
+                                pass
+                        else:
+                            listFinal.append(hasil)
+                            listFinal.append(">")
+                            hasil = ""
 
                     else:
                         if(len(hasil) != 0):
