@@ -1,5 +1,6 @@
 strFile = ""
 listFile = []
+listFile2 = []
 listFinal = []
 tempTag = ""
 count = 0
@@ -55,10 +56,17 @@ for i in range(len(listFile)):
             if(elmt[-2] == " "):
                 elmt = remove(elmt,-2)
                 listFile[i] = elmt
+print(listFile)
+print("\n")
+for k in range(len(listFile)):
+    elmt = listFile[k]
+    if("<" == elmt[0] and ">" == elmt[-1]):
+        listFile2.append(elmt)
+print(listFile2)
 
 # dekomposisi open tag with att
-for j in range(len(listFile)):
-    elmt = listFile[j]
+for j in range(len(listFile2)):
+    elmt = listFile2[j]
     if(len(elmt) <= 1):
         listFinal.append(elmt)
     else:
@@ -104,5 +112,6 @@ for j in range(len(listFile)):
                             hasil += cc
 
 # print(listFile)
-listFinal.remove("")
+# listFinal.remove("")
+print("\n")
 print(listFinal)
