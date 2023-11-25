@@ -1,30 +1,41 @@
-init html 
-<html> <head>
-
-ATRIBUT id="" e ATRIBUT e
-ATRIBUT class="" e ATRIBUT e
-ATRIBUT style="" e ATRIBUT e
+START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT
+<html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a
+<Z> <X> </link> </validLink> </a> <!----> </html> </head> </title> </script> </br> </em> </b> </abbr> </strong> </small> </hr> </div> </a> </h1> </h2> </h3> </h4> </h5> </h6> </p>
+START
+<Z>
+FINISH
+F
+ATRIBUT id="" <X> ATRIBUT <X>
+ATRIBUT class="" <X> ATRIBUT <X> 
+ATRIBUT style="" <X> ATRIBUT <X> 
 ATRIBUT href="" </link> ATRIBUT </link>
 ATRIBUT href="" </validLink> ATRIBUT </validLink>
+ATRIBUT href="" </a> ATRIBUT </a>
 ATRIBUT rel="" </link> ATRIBUT </validLink>
-
-CONTENT <br> e CONTENT e
-CONTENT <b> e CONTENT </b>
-
-CONTENT <em> e CONTENT e
-CONTENT <b> </content> CONTENT </b></content>
-CONTENT </b> </b> CONTENT e
-CONTENT <b> </content> CONTENT </b></content>
-CONTENT </b> </b> CONTENT e
-CONTENT <b> </content> CONTENT </b></content>
-CONTENT </b> </b> CONTENT e
-
-START <html <Z> ATRIBUT </html><Z>
-ATRIBUT > </html> HTML </html>
-
-HTML <head </html> ATRIBUT </head></html>
-ATRIBUT > </head> HEAD </head>
-
+ATRIBUT src="" </img> ATRIBUT </validImg>
+ATRIBUT alt="" </img> ATRIBUT </img>
+ATRIBUT alt="" </validImg> ATRIBUT </validImg>
+ATRIBUT src="" </script> ATRIBUT </script>
+ATRIBUT type="submit" </button> ATRIBUT </typeButton>
+ATRIBUT type="reset" </button> ATRIBUT </typeButton>
+ATRIBUT type="button" </button> ATRIBUT </typeButton>
+ATRIBUT type="text" </input> ATRIBUT </typeInput>
+ATRIBUT type="password" </input> ATRIBUT </typeInput>
+ATRIBUT type="email" </input> ATRIBUT </typeInput>
+ATRIBUT type="number" </input> ATRIBUT </typeInput>
+ATRIBUT type="checkbox" </input> ATRIBUT </typeInput>
+ATRIBUT action="" </form> ATRIBUT </form>
+ATRIBUT method="get" </form> ATRIBUT </methodForm>
+ATRIBUT method="post" </form> ATRIBUT </methodForm>
+-------------------------------------------------------------------
+HEAD <!----> <X> HEAD <X>
+BODY <!----> <X> BODY <X>
+HTML <!----> <X> HTML <X>
+HTMLH <!----> <X> HTMLH <X>
+HTMLHB <!----> <X> HTMLHB <X>
+START <!----> <X> START <X>
+FINISH <!----> <X> FINISH <X>
+-------------------------------------------------------------------
 HEAD <title </head> ATRIBUT </title></head>
 ATRIBUT > </title> HEAD </title>
 HEAD </title> </title> HEAD e
@@ -35,36 +46,164 @@ HEAD </script> </script> HEAD e
 
 HEAD <link </head> ATRIBUT </link></head>
 ATRIBUT > </validLink> HEAD e
+-------------------------------------------------------------------
+BODY <br <X> ATRIBUT </br><X>
+ATRIBUT > </br> BODY e
+
+BODY <em <X> ATRIBUT </em><X>
+ATRIBUT > </em> BODY </em>
+BODY </em> </em> BODY e
+
+BODY <b <X> ATRIBUT </b><X>
+ATRIBUT > </b> BODY </b>
+BODY </b> </b> BODY e
+
+BODY <abbr <X> ATRIBUT </abbr><X>
+ATRIBUT > </abbr> BODY </abbr>
+BODY </abbr> </abbr> BODY e
+
+BODY <strong <X> ATRIBUT </strong><X>
+ATRIBUT > </strong> BODY </strong>
+BODY </strong> </strong> BODY e
+
+BODY <small <X> ATRIBUT </small><X>
+ATRIBUT > </small> BODY </small>
+BODY </small> </small> BODY e
+
+BODY <hr <X> ATRIBUT </hr><X>
+ATRIBUT > </hr> BODY e
+
+BODY <div <X> ATRIBUT </div><X>
+ATRIBUT > </div> BODY </div>
+BODY </div> </div> BODY e
+
+BODY <a <X> ATRIBUT </a><X>
+ATRIBUT > </a> CONTENT </a>
+CONTENT </a> </a> BODY e
+
+BODY <h1 <X> ATRIBUT </h1><X>
+ATRIBUT > </h1> CONTENT </h1>
+CONTENT </h1> </h1> BODY e
+
+BODY <h2 <X> ATRIBUT </h2><X>
+ATRIBUT > </h2> CONTENT </h2>
+CONTENT </h2> </h2> BODY e
+
+BODY <h3 <X> ATRIBUT </h3><X>
+ATRIBUT > </h3> CONTENT </h3>
+CONTENT </h3> </h3> BODY e
+
+BODY <h4 <X> ATRIBUT </h4><X>
+ATRIBUT > </h4> CONTENT </h4>
+CONTENT </h4> </h4> BODY e
+
+BODY <h5 <X> ATRIBUT </h5><X>
+ATRIBUT > </h5> CONTENT </h5>
+CONTENT </h5> </h5> BODY e
+
+BODY <h6 <X> ATRIBUT </h6><X>
+ATRIBUT > </h6> CONTENT </h6>
+CONTENT </h6> </h6> BODY e
+
+BODY <p <X> ATRIBUT </p><X>
+ATRIBUT > </p> CONTENT </p>
+CONTENT </p> </p> BODY e
+
+BODY <link <X> ATRIBUT </link><X>
+ATRIBUT > </validLink> BODY e
+
+BODY <script <X> ATRIBUT </script><X>
+ATRIBUT > </script> BODY e
+
+BODY <img <X> ATRIBUT </img><X>
+ATRIBUT > </validImg> BODY e
+
+BODY <button <X> ATRIBUT </button><X>
+ATRIBUT > </typeButton> CONTENT </typeButton>
+CONTENT </button> </typeButton> BODY e
+
+BODY <form <X> ATRIBUT </form><X>
+ATRIBUT > </methodForm> CONTENT </methodForm>
+CONTENT </form> </methodForm> BODY e
+
+BODY <input <X> ATRIBUT </input><X>
+ATRIBUT > </typeInput> BODY e
+
+BODY <table <X> ATRIBUT </table><X>
+ATRIBUT > </table> TABLE_CONTENT </table>
+TABLE_CONTENT </table> </table> BODY e
+----------------------------------------------------------------------
+CONTENT <br <X> ATRIBUT </br><X>
+ATRIBUT > </br> CONTENT e
+
+CONTENT <em <X> ATRIBUT </em><X>
+ATRIBUT > </em> CONTENT </em>
+CONTENT </em> </em> CONTENT e
+
+CONTENT <b <X> ATRIBUT </b><X>
+ATRIBUT > </b> CONTENT </b>
+CONTENT </b> </b> CONTENT e
+
+CONTENT <abbr <X> ATRIBUT </abbr><X>
+ATRIBUT > </abbr> CONTENT </abbr>
+CONTENT </abbr> </abbr> CONTENT e
+
+CONTENT <strong <X>  ATRIBUT </strong><X>
+ATRIBUT > </strong> CONTENT </strong>
+CONTENT </strong> </strong> CONTENT e
+
+CONTENT <small <X> ATRIBUT </small><X>
+ATRIBUT > </small> CONTENT </small>
+CONTENT </small> </small> CONTENT e
+
+CONTENT <hr <X> ATRIBUT </hr><X>
+ATRIBUT > </hr> CONTENT e
+
+TABLE_CONTENT <br <X> ATRIBUT </br_t><X>
+ATRIBUT > </br_t> TABLE_CONTENT e
+
+TABLE_CONTENT <em <X> ATRIBUT </em_t><X>
+ATRIBUT > </em_t> CONTENT </em_t>
+CONTENT </em> </em_t> TABLE_CONTENT e
+
+TABLE_CONTENT <b <X> ATRIBUT </b_t><X>
+ATRIBUT > </b_t> CONTENT </b_t>
+CONTENT </b> </b_t> TABLE_CONTENT e
+
+TABLE_CONTENT <abbr <X> ATRIBUT </abbr_t><X>
+ATRIBUT > </abbr_t> CONTENT </abbr_t>
+CONTENT </abbr> </abbr_t> TABLE_CONTENT e
+
+TABLE_CONTENT <strong <X> ATRIBUT </strong_t><X>
+ATRIBUT > </strong_t> CONTENT </strong_t>
+CONTENT </strong> </strong_t> TABLE_CONTENT e
+
+TABLE_CONTENT <small <X> ATRIBUT </small_t><X>
+ATRIBUT > </small_t> CONTENT </small_t>
+CONTENT </small> </small_t> TABLE_CONTENT e
+
+TABLE_CONTENT <hr <X> ATRIBUT </hr_t><X>
+ATRIBUT > </hr_t> TABLE_CONTENT e
+
+TABLE_CONTENT <tr <X> ATRIBUT </tr><X>
+ATRIBUT > </tr> TABLE_CONTENT </tr>
+
+TABLE_CONTENT <td <X> ATRIBUT </td><X>
+ATRIBUT > </td> TABLE_CONTENT </td>
+
+TABLE_CONTENT <th <X> ATRIBUT </th><X>
+ATRIBUT > </th> TABLE_CONTENT </th>
+----------------------------------------------------------------------
+START <html <Z> ATRIBUT </html><Z>
+ATRIBUT > </html> HTML </html>
+
+HTML <head </html> ATRIBUT </head></html>
+ATRIBUT > </head> HEAD </head>
 
 HEAD </head> </head> HTMLH e
 
 HTMLH <body </html> ATRIBUT </body></html>
 ATRIBUT > </body> BODY </body>
 
-BODY <h1 </body> ATRIBUT </h1></body>
-ATRIBUT > </h1> CONTENT </content></h1>
-CONTENT </h1> </content></h1> BODY e
-
-BODY <h2 </body> ATRIBUT </h2></body>
-ATRIBUT > </h2> CONTENT </content></h2>
-CONTENT </h2> </content></h2> BODY e
-
-BODY <h3 </body> ATRIBUT </h3></body>
-ATRIBUT > </h3> CONTENT </content></h3>
-CONTENT </h3> </content></h3> BODY e
-
-BODY <h4 </body> ATRIBUT </h4></body>
-ATRIBUT > </h4> CONTENT </content></h4>
-CONTENT </h4> </content></h4> BODY e
-
-BODY <h5 </body> ATRIBUT </h5></body>
-ATRIBUT > </h5> CONTENT </content></h5>
-CONTENT </h5> </content></h5> BODY e
-
-BODY <h6 </body> ATRIBUT </h6></body>
-ATRIBUT > </h6> CONTENT </content></h6>
-CONTENT </h6> </content></h6> BODY e
-
-BODY <p </body> ATRIBUT </p></body>
-ATRIBUT > </p> CONTENT </content></p>
-CONTENT </p> </content></p> BODY e 
+BODY </body> </body> HTMLHB e
+HTMLHB </html> </html> FINISH e
