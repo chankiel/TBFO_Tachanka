@@ -1,13 +1,101 @@
 init html 
 <html> <head>
 
-ATRIBUT id="" e ATRIBUT e
-ATRIBUT class="" e ATRIBUT e
-ATRIBUT style="" e ATRIBUT e
+ATRIBUT id="" X ATRIBUT X
+ATRIBUT class="" X ATRIBUT X 
+ATRIBUT style="" X ATRIBUT X 
 ATRIBUT href="" </link> ATRIBUT </link>
 ATRIBUT href="" </validLink> ATRIBUT </validLink>
 ATRIBUT rel="" </link> ATRIBUT </validLink>
+-------------------------------------------------------------------
+BODY <br X ATRIBUT </br>
+ATRIBUT > </br> BODY e
 
+BODY <em X ATRIBUT </em>
+ATRIBUT > </em> BODY </em>
+BODY </em> </em> BODY e
+
+BODY <b X ATRIBUT </b>
+ATRIBUT > </b> BODY </b>
+BODY </b> </b> BODY e
+
+BODY <abbr X ATRIBUT </abbr>
+ATRIBUT > </abbr> BODY </abbr>
+BODY </abbr> </abbr> BODY e
+
+BODY <strong X ATRIBUT </strong>
+ATRIBUT > </strong> BODY </strong>
+BODY </strong> </strong> BODY e
+
+BODY <small X ATRIBUT </small>
+ATRIBUT > </small> BODY </small>
+BODY </small> </small> BODY e
+
+BODY <hr X ATRIBUT </hr>
+ATRIBUT > </hr> BODY e
+-------------------------------------------------------------------------
+BODY <div X ATRIBUT </div>
+ATRIBUT > </div> BODY </div>
+BODY </div> </div> BODY e
+
+BODY <a X ATRIBUT </a>
+ATRIBUT > </a> CONTENT </a>
+CONTENT </a> </a> BODY e
+
+BODY <h1 X ATRIBUT </h1>
+ATRIBUT > </h1> CONTENT </h1>
+CONTENT </h1> </h1> BODY e
+
+BODY <h2 X ATRIBUT </h2> 
+ATRIBUT > </h2> CONTENT </h2>
+CONTENT </h2> </h2> BODY e
+
+BODY <h3 X ATRIBUT </h3>
+ATRIBUT > </h3> CONTENT </h3>
+CONTENT </h3> </h3> BODY e
+
+BODY <h4 X ATRIBUT </h4>
+ATRIBUT > </h4> CONTENT </h4>
+CONTENT </h4> </h4> BODY e
+
+BODY <h5 X ATRIBUT </h5>
+ATRIBUT > </h5> CONTENT </h5>
+CONTENT </h5> </h5> BODY e
+
+BODY <h6 X ATRIBUT </h6>
+ATRIBUT > </h6> CONTENT </h6>
+CONTENT </h6> </h6> BODY e
+
+BODY <p X ATRIBUT </p>
+ATRIBUT > </p> CONTENT </p>
+CONTENT </p> </p> BODY e
+----------------------------------------------------------------------
+CONTENT <br X ATRIBUT </br>
+ATRIBUT > </br> CONTENT e
+
+CONTENT <em X ATRIBUT </em>
+ATRIBUT > </em> CONTENT </em>
+CONTENT </em> </em> CONTENT e
+
+CONTENT <b X ATRIBUT </b>
+ATRIBUT > </b> CONTENT </b>
+CONTENT </b> </b> CONTENT e
+
+CONTENT <abbr X ATRIBUT </abbr>
+ATRIBUT > </abbr> CONTENT </abbr>
+CONTENT </abbr> </abbr> CONTENT e
+
+CONTENT <strong X  ATRIBUT </strong>
+ATRIBUT > </strong> CONTENT </strong>
+CONTENT </strong> </strong> CONTENT e
+
+CONTENT <small X ATRIBUT </small>
+ATRIBUT > </small> CONTENT </small>
+CONTENT </small> </small> CONTENT e
+
+CONTENT <hr X ATRIBUT </hr>
+ATRIBUT > </hr> CONTENT e
+----------------------------------------------------------------------
 START <html <Z> ATRIBUT </html><Z>
 ATRIBUT > </html> HTML </html>
 
@@ -29,39 +117,3 @@ HEAD </head> </head> HTMLH e
 
 HTMLH <body </html> ATRIBUT </body></html>
 ATRIBUT > </body> BODY </body>
-
-BODY <h1 </body> ATRIBUT </h1></body>
-BODY <h1 </div> ATRIBUT </h1></div>
-ATRIBUT > </h1> BODY </h1>
-BODY </h1> </h1> BODY e
-
-BODY <h2 </body> ATRIBUT </h2></body>
-BODY <h2 </div> ATRIBUT </h2></div>
-ATRIBUT > </h2> BODY </h2>
-BODY </h2> </h2> BODY e
-
-BODY <h3 </body> ATRIBUT </h3></body>
-BODY <h3 </div> ATRIBUT </h3></div>
-ATRIBUT > </h3> BODY </h3>
-BODY </h3> </h3> BODY e
-
-BODY <h4 </body> ATRIBUT </h4></body>
-BODY <h4 </div> ATRIBUT </h4></div>
-ATRIBUT > </h4> BODY </h4>
-BODY </h4> </h4> BODY e
-
-BODY <h5 </body> ATRIBUT </h5></body>
-BODY <h5 </div> ATRIBUT </h5></div>
-ATRIBUT > </h5> BODY </h5>
-BODY </h5> </h5> BODY e
-
-BODY <h6 </body> ATRIBUT </h6></body>
-BODY <h6 </div> ATRIBUT </h6></div>
-ATRIBUT > </h6> BODY </h6>
-BODY </h6> </h6> BODY e
-
-BODY <p </body> ATRIBUT </p></body>
-BODY <p </div> ATRIBUT </p></div>
-ATRIBUT > </p> BODY </p>
-BODY </p> </p> BODY e
-
