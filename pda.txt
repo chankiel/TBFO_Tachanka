@@ -1,11 +1,9 @@
-START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT TABLE ERROR
-<html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a <link
-id="" class="" style="" href="" rel="" src="" alt="" type="submit" type="reset" type="button" type="text" type="password" type="email" type="number" type="checkbox"
-action="" method="GET" method="POST" <!---- > X 
-<Z> <X> </link> </validLink> </a> <!----> </html> </head> </title> </script> </br> </em> </b> </abbr> </strong> </small> </hr> </div> </a> </h1> </h2> </h3> </h4> </h5> </h6> </p>
+ATTRIBUTE HEAD BODY CONTENT HTML HTMLH HTMLHB START FINISH TABLE ERROR
+id="" class="" style="" href="" rel="" src="" alt="" type="submit" type="reset" type="button" type="text" type="password" type="email" type="number" type="checkbox" action="" method="GET" method="POST" <!----> X <title </title> <script </script> <link <br <em </em> <b </b> <abbr </abbr> <strong </strong> <small </small> <hr <div </div> <a </a> <h1 </h1> <h2 </h2> <h3 </h3> <h4 </h4> <h5 </h5> <h6 </h6> <p </p> <img <button </button> <form </form> <input <table </table> <tr </tr> <th </th> <td
+<X> </linkH> </linkB> </validLinkH> </validLinkB> </a> </img> </scriptH> </scriptB> </validImg> </button> </input> </form> </comment> </body> </head> </table> </tr> </title> </brB> </emB> </bB> </abbrB> </strongB> </smallB> </hrB> </div> </h1> </h2> </h3> </h4> </h5> </h6> </p> </typeButton> </methodForm> </typeInput> </brC> </emC> </bC> </abbrC> </strongC> </smallc> </smallC> </hrC> </th> </td> <Z> </html>
 START
 <Z>
-FINISH
+FINAL
 F
 ATRIBUT id="" <X> ATRIBUT <X>
 ATRIBUT class="" <X> ATRIBUT <X> 

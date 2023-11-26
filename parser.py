@@ -1,3 +1,4 @@
+
 def remove(s, indx):
     s = list(s)
     s.pop(indx)
@@ -7,21 +8,23 @@ def remove(s, indx):
 # print(str)
 # str = remove(str,-2)
 # print(str)
-
-def parser(filename):
+def parser(nameFile):
     strFile = ""
     listFile = []
     listFile2 = []
+    listFile3 = []
     listFinal = []
     tempTag = ""
     count = 0
     tempAtt = ""
-    with open(filename, 'r',encoding='utf-8') as file:
+    # Buka file
+    with open(nameFile, 'r') as file:
         # Baca file
         content = file.read()
         strFile = content
     strFile=strFile.replace('\n', '')
 
+    # dekomposisi awal pisahin tag awal(<tag>), isi, dan tag akhir(</tag>)
     for char in strFile:
         if(char == ">"):
             tempTag += ">"
@@ -58,6 +61,8 @@ def parser(filename):
                     tempTag += char
         else:
             tempTag += char
+    listFile.append(tempTag)
+    # listFile = listFile.remove('')
 
     # clear whitespace behind ">"
     for i in range(len(listFile)):
@@ -67,12 +72,35 @@ def parser(filename):
                 if(elmt[-2] == " "):
                     elmt = remove(elmt,-2)
                     listFile[i] = elmt
+    # print(listFile) # check proses 1
+    # print("\n")
+
+    # clear isi
     for k in range(len(listFile)):
         elmt = listFile[k]
-        if("<" == elmt[0] and ">" == elmt[-1]):
-            listFile2.append(elmt)
-        else:
-            listFile2.append("X")
+        if(len(elmt) != 0):
+            if("<" == elmt[0] and ">" == elmt[-1]):
+                listFile2.append(elmt)
+            else:
+                listFile2.append("X")
+            # if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
+            #     listFile2.append("X")
+            # elif(k-1 < 0):
+            #     listFile2.append("X")
+            # else:
+            #     pass
+    # print(listFile2)
+
+    # # clear comment
+    # for n in range(len(listFile2)):
+    #     elmt = listFile2[n]
+    #     if("<!--" in elmt and "-->" in elmt):
+    #         pass
+    #     else:jka
+    #         listFile3.append(elmt)
+    # print("\n")
+    # print(listFile3)
+
     # dekomposisi open tag with att
     for j in range(len(listFile2)):
         elmt = listFile2[j]
@@ -100,9 +128,17 @@ def parser(filename):
                                     listFinal.append(hasil)
                                     hasil = ""
                         elif(cc == ">"):
-                            listFinal.append(hasil)
-                            listFinal.append(">")
-                            hasil = ""
+                            if("=" in hasil):
+                                if(hasil.count("\"")%2 == 0):
+                                    listFile.append(hasil)
+                                    listFile.append(">")
+                                    hasil = ""
+                                elif(hasil.count("\"")%2 == 1):
+                                    pass
+                            else:
+                                listFinal.append(hasil)
+                                listFinal.append(">")
+                                hasil = ""
 
                         else:
                             if(len(hasil) != 0):
@@ -119,4 +155,9 @@ def parser(filename):
                                     hasil += cc
                             else:         
                                 hasil += cc
+
+    # print(listFile)
+    # listFinal.remove("")
+    # print("\n")
+    # print(listFinal)
     return listFinal

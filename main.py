@@ -53,9 +53,6 @@ for val in arr:
     if(res == ("NO_STATE","NO_TOP")):
         res = pdaRules.get((currentState,val,"<X>"),("NO_STATE","NO_TOP"))
     if(res == ("NO_STATE","NO_TOP") or res==("ERROR","e")):
-        print(currentState)
-        print(val)
-        print(top)
         break
     currentState = res[0]
     # print("After currentState:",currentState)
