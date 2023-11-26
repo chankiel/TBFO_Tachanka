@@ -1,5 +1,7 @@
 START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT TABLE ERROR
-<html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a
+<html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a <link
+id="" class="" style="" href="" rel="" src="" alt="" type="submit" type="reset" type="button" type="text" type="password" type="email" type="number" type="checkbox"
+action="" method="GET" method="POST" <!---- > X 
 <Z> <X> </link> </validLink> </a> <!----> </html> </head> </title> </script> </br> </em> </b> </abbr> </strong> </small> </hr> </div> </a> </h1> </h2> </h3> </h4> </h5> </h6> </p>
 START
 <Z>
