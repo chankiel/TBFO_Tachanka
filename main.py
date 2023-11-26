@@ -13,7 +13,7 @@ parser.add_argument('file2', type=str, help='HTML Filename')
 
 args = parser.parse_args()
 pdaFile = args.file1
-htmlFile = args.file2
+htmlFile = "tests/"+args.file2
 
 with open(pdaFile, 'r') as filepda:
     contentpdaline = filepda.readlines()
@@ -66,6 +66,8 @@ for val in arr:
                 pdaStack.append(top)
             else:
                 pdaStack.append(elmt)
+# print(currentState)
+# print(acceptingState)
 
 if(currentState==acceptingState):
     print("Accepted\n")

@@ -3,11 +3,6 @@ def remove(s, indx):
     s = list(s)
     s.pop(indx)
     return ''.join(s)
-# test
-# str = "abcdef"
-# print(str)
-# str = remove(str,-2)
-# print(str)
 def parser(nameFile):
     strFile = ""
     listFile = []
@@ -91,15 +86,7 @@ def parser(nameFile):
             #     pass
     # print(listFile2)
 
-    # # clear comment
-    # for n in range(len(listFile2)):
-    #     elmt = listFile2[n]
-    #     if("<!--" in elmt and "-->" in elmt):
-    #         pass
-    #     else:jka
-    #         listFile3.append(elmt)
-    # print("\n")
-    # print(listFile3)
+
 
     # dekomposisi open tag with att
     for j in range(len(listFile2)):
@@ -155,9 +142,9 @@ def parser(nameFile):
                                     hasil += cc
                             else:         
                                 hasil += cc
+    return listFinal
 
     # print(listFile)
     # listFinal.remove("")
     # print("\n")
     # print(listFinal)
-    return listFinal
