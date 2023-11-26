@@ -81,12 +81,13 @@ for k in range(len(listFile)):
     if("<" == elmt[0] and ">" == elmt[-1]):
         listFile2.append(elmt)
     else:
-        if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
-            listFile2.append("X")
-        elif(k-1 < 0):
-            listFile2.append("X")
-        else:
-            pass
+        listFile2.append("X")
+        # if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
+        #     listFile2.append("X")
+        # elif(k-1 < 0):
+        #     listFile2.append("X")
+        # else:
+        #     pass
 print(listFile2)
 
 # # clear comment
