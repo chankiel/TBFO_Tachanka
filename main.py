@@ -1,11 +1,13 @@
-import parser
+import html_parser
 totalStates = []
 inputSymbols = []
 stackSymbols = []
 pdaStack = []
 pdaRules = {}
 
-with open('pda.txt', 'r') as filepda:
+print()
+namaFile = str(input())
+with open('namaFile', 'r') as filepda:
     contentpdaline = filepda.readlines()
 
 # print(contentpda)
@@ -40,8 +42,8 @@ for pdaline in contentpdaline:
 # for key, value in pdaRules.items():
 #     print(f"Key: {key}, Value: {value}")
 
-arr = parser.parser("index.html")
-print(arr)
+arr = html_parser.parser("index.html")
+# print(arr)
 for val in arr:
     if(val==""):
         continue
@@ -53,6 +55,9 @@ for val in arr:
     if(res == ("NO_STATE","NO_TOP")):
         res = pdaRules.get((currentState,val,"<X>"),("NO_STATE","NO_TOP"))
     if(res == ("NO_STATE","NO_TOP") or res==("ERROR","e")):
+        # print("CurrentState : "+currentState)
+        # print("input :",val)
+        # print("top stack :",top)
         break
     currentState = res[0]
     # print("After currentState:",currentState)
@@ -65,6 +70,8 @@ for val in arr:
             else:
                 # print("Elmt append stack:",elmt)
                 pdaStack.append(elmt)
+# print(currentState)
+# print(acceptingState)
 
 if(currentState==acceptingState):
     print("Accepted\n")

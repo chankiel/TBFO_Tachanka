@@ -3,7 +3,7 @@ id="" class="" style="" href="" rel="" src="" alt="" type="submit" type="reset" 
 <X> </linkH> </linkB> </validLinkH> </validLinkB> </a> </img> </scriptH> </scriptB> </validImg> </button> </input> </form> </comment> </body> </head> </table> </tr> </title> </brB> </emB> </bB> </abbrB> </strongB> </smallB> </hrB> </div> </h1> </h2> </h3> </h4> </h5> </h6> </p> </typeButton> </methodForm> </typeInput> </brC> </emC> </bC> </abbrC> </strongC> </smallc> </smallC> </hrC> </th> </td> <Z> </html>
 START
 <Z>
-FINAL
+FINISH
 F
 ATRIBUT id="" <X> ATRIBUT <X>
 ATRIBUT class="" <X> ATRIBUT <X> 
