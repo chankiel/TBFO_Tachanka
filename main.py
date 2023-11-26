@@ -1,16 +1,23 @@
 import html_parser
+import argparse
 totalStates = []
 inputSymbols = []
 stackSymbols = []
 pdaStack = []
 pdaRules = {}
 
-print()
-namaFile = str(input())
-with open('namaFile', 'r') as filepda:
+parser = argparse.ArgumentParser(description='PDA Filename and HTML Filename')
+
+parser.add_argument('file1', type=str, help='PDA Filename')
+parser.add_argument('file2', type=str, help='HTML Filename')
+
+args = parser.parse_args()
+pdaFile = args.file1
+htmlFile = args.file2
+
+with open(pdaFile, 'r') as filepda:
     contentpdaline = filepda.readlines()
 
-# print(contentpda)
 linecount = 1
 for pdaline in contentpdaline:
     if linecount == 1:
@@ -39,18 +46,11 @@ for pdaline in contentpdaline:
         pdaRules[key] = value
     linecount += 1
 
-# for key, value in pdaRules.items():
-#     print(f"Key: {key}, Value: {value}")
-
 arr = html_parser.parser("index.html")
-# print(arr)
 for val in arr:
     if(val==""):
         continue
     top = pdaStack.pop()
-    # print("CurrentState : "+currentState)
-    # print("input :",val)
-    # print("top stack :",top)
     res = pdaRules.get((currentState,val,top),("NO_STATE","NO_TOP"))
     if(res == ("NO_STATE","NO_TOP")):
         res = pdaRules.get((currentState,val,"<X>"),("NO_STATE","NO_TOP"))
@@ -60,15 +60,11 @@ for val in arr:
         # print("top stack :",top)
         break
     currentState = res[0]
-    # print("After currentState:",currentState)
-    # print("Next Top", res[1])
     for elmt in reversed(res[1]):
         if(elmt!="" and elmt!='e'):
             if(elmt=='<X>'):
-                # print("Elmt append stack:",top)
                 pdaStack.append(top)
             else:
-                # print("Elmt append stack:",elmt)
                 pdaStack.append(elmt)
 # print(currentState)
 # print(acceptingState)
@@ -77,6 +73,3 @@ if(currentState==acceptingState):
     print("Accepted\n")
 else:
     print("Syntax Error\n")
-
-
-# START HTML HEAD BODY HTMLH HTMLHB FINISH TABLE TR
