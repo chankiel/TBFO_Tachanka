@@ -1,0 +1,210 @@
+START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT
+<html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a
+<Z> <X> </link> </validLink> </a> <!----> </html> </head> </title> </script> </br> </em> </b> </abbr> </strong> </small> </hr> </div> </a> </h1> </h2> </h3> </h4> </h5> </h6> </p>
+START
+<Z>
+FINISH
+F
+ATRIBUT id="" <X> ATRIBUT <X>
+ATRIBUT class="" <X> ATRIBUT <X> 
+ATRIBUT style="" <X> ATRIBUT <X>
+
+ATRIBUT href="" </linkH> ATRIBUT </linkH>
+ATRIBUT href="" </linkB> ATRIBUT </linkB>
+ATRIBUT href="" </validLinkH> ATRIBUT </validLinkH>
+ATRIBUT href="" </validLinkB> ATRIBUT </validLinkB>
+ATRIBUT href="" </a> ATRIBUT </a>
+
+ATRIBUT rel="" </linkH> ATRIBUT </validLinkH>
+ATRIBUT rel="" </linkB> ATRIBUT </validLinkB>
+
+ATRIBUT src="" </img> ATRIBUT </validImg>
+ATRIBUT src="" </scriptH> ATRIBUT </scriptH>
+ATRIBUT src="" </scriptB> ATRIBUT </scriptB>
+
+ATRIBUT alt="" </img> ATRIBUT </img>
+ATRIBUT alt="" </validImg> ATRIBUT </validImg>
+
+ATRIBUT type="submit" </button> ATRIBUT </typeButton>
+ATRIBUT type="reset" </button> ATRIBUT </typeButton>
+ATRIBUT type="button" </button> ATRIBUT </typeButton>
+ATRIBUT type="text" </input> ATRIBUT </typeInput>
+ATRIBUT type="password" </input> ATRIBUT </typeInput>
+ATRIBUT type="email" </input> ATRIBUT </typeInput>
+ATRIBUT type="number" </input> ATRIBUT </typeInput>
+ATRIBUT type="checkbox" </input> ATRIBUT </typeInput>
+
+ATRIBUT action="" </form> ATRIBUT </form>
+
+ATRIBUT method="get" </form> ATRIBUT </methodForm>
+ATRIBUT method="post" </form> ATRIBUT </methodForm>
+--------------------------------------------------------------------------------------
+
+HEAD <!----> <X> HEAD <X>
+BODY <!----> <X> BODY <X>
+CONTENT <!----> <X> CONTENT <X>
+HTML <!----> <X> HTML <X>
+HTMLH <!----> <X> HTMLH <X>
+HTMLHB <!----> <X> HTMLHB <X>
+START <!----> <X> START <X>
+FINISH <!----> <X> FINISH <X>
+
+----------------------------------------------------------------------------------
+
+HEAD <title </head> ATRIBUT </title></head>
+ATRIBUT > </title> HEAD </title>
+HEAD </title> </title> HEAD e
+
+HEAD <script </head> ATRIBUT </scriptH></head>
+ATRIBUT > </scriptH> HEAD </scriptH>
+HEAD </script> </scriptH> HEAD e
+
+HEAD <link </head> ATRIBUT </linkH></head>
+ATRIBUT > </validLinkH> HEAD e
+
+----------------------------------------------------------------------------------
+
+BODY <br <X> ATRIBUT </brB><X>
+ATRIBUT > </brB> BODY e
+
+BODY <em <X> ATRIBUT </emB><X>
+ATRIBUT > </emB> CONTENT </emB>
+CONTENT </em> </emB> BODY e
+
+BODY <b <X> ATRIBUT </bB><X>
+ATRIBUT > </bB> BODY </bB>
+BODY </b> </bB> BODY e
+
+BODY <abbr <X> ATRIBUT </abbrB><X>
+ATRIBUT > </abbrB> BODY </abbrB>
+BODY </abbr> </abbrB> BODY e
+
+BODY <strong <X> ATRIBUT </strongB><X>
+ATRIBUT > </strongB> BODY </strongB>
+BODY </strong> </strongB> BODY e
+
+BODY <small <X> ATRIBUT </smallB><X>
+ATRIBUT > </smallB> BODY </smallB>
+BODY </small> </smallB> BODY e
+
+BODY <hr <X> ATRIBUT </hrB><X>
+ATRIBUT > </hrB> BODY e
+
+BODY <div <X> ATRIBUT </div><X>
+ATRIBUT > </div> BODY </div>
+BODY </div> </div> BODY e
+
+BODY <a <X> ATRIBUT </a><X>
+ATRIBUT > </a> CONTENT </a>
+CONTENT </a> </a> BODY e
+
+BODY <h1 <X> ATRIBUT </h1><X>
+ATRIBUT > </h1> CONTENT </h1>
+CONTENT </h1> </h1> BODY e
+
+BODY <h2 <X> ATRIBUT </h2><X>
+ATRIBUT > </h2> CONTENT </h2>
+CONTENT </h2> </h2> BODY e
+
+BODY <h3 <X> ATRIBUT </h3><X>
+ATRIBUT > </h3> CONTENT </h3>
+CONTENT </h3> </h3> BODY e
+
+BODY <h4 <X> ATRIBUT </h4><X>
+ATRIBUT > </h4> CONTENT </h4>
+CONTENT </h4> </h4> BODY e
+
+BODY <h5 <X> ATRIBUT </h5><X>
+ATRIBUT > </h5> CONTENT </h5>
+CONTENT </h5> </h5> BODY e
+
+BODY <h6 <X> ATRIBUT </h6><X>
+ATRIBUT > </h6> CONTENT </h6>
+CONTENT </h6> </h6> BODY e
+
+BODY <p <X> ATRIBUT </p><X>
+ATRIBUT > </p> CONTENT </p>
+CONTENT </p> </p> BODY e
+
+BODY <link <X> ATRIBUT </linkB><X>
+ATRIBUT > </validLinkB> BODY e
+
+BODY <script <X> ATRIBUT </scriptB><X>
+ATRIBUT > </scriptB> CONTENT </scriptB>
+CONTENT </script> </scriptB> BODY e
+
+BODY <img <X> ATRIBUT </img><X>
+ATRIBUT > </validImg> BODY e
+
+BODY <button <X> ATRIBUT </button><X>
+ATRIBUT > </typeButton> CONTENT </typeButton>
+CONTENT </button> </typeButton> BODY e
+
+BODY <form </form> ERROR e
+BODY <form <X> ATRIBUT </form><X>
+ATRIBUT > </methodForm> FORM </methodForm>
+FORM </form> </methodForm> BODY e
+
+BODY <input <X> ATRIBUT </input><X>
+ATRIBUT > </typeInput> BODY e
+
+BODY <table <X> ATRIBUT </table><X>
+ATRIBUT > </table> TABLE </table>
+TABLE </table> </table> BODY e
+-----------------------------------------------------------------------
+---------------------------------------------------------------------
+CONTENT <br <X> ATRIBUT </brC><X>
+ATRIBUT > </brC> CONTENT e
+
+CONTENT <em <X> ATRIBUT </emC><X>
+ATRIBUT > </emC> CONTENT </emC>
+CONTENT </em> </emC> CONTENT e
+
+CONTENT <b <X> ATRIBUT </bC><X>
+ATRIBUT > </bC> CONTENT </bC>
+CONTENT </b> </bC> CONTENT e
+
+CONTENT <abbr <X> ATRIBUT </abbrC><X>
+ATRIBUT > </abbrC> CONTENT </abbrC>
+CONTENT </abbr> </abbrC> CONTENT e
+
+CONTENT <strong <X>  ATRIBUT </strongC><X>
+ATRIBUT > </strongC> CONTENT </strongC>
+CONTENT </strong> </strongC> CONTENT e
+
+CONTENT <small <X> ATRIBUT </smallC><X>
+ATRIBUT > </smallc> CONTENT </smallC>
+CONTENT </small> </smallC> CONTENT e
+
+CONTENT <hr <X> ATRIBUT </hrC><X>
+ATRIBUT > </hrC> CONTENT e
+---------------------------------------------------------------------
+TABLE <t </table> ATRIBUT </tr></table>
+TABLE > </tr> TABLE </tr>
+TABLE </tr> </tr> TABLE e
+
+TABLE <th </tr> ATRIBUT </th></tr>
+ATRIBUT > </th> CONTENT </th>
+CONTENT </th> </th> TABLE e
+
+TABLE <td </tr> ATRIBUT </td></tr>
+ATRIBUT > </td> CONTENT </td>
+CONTENT </td> </td> TABLE e
+--------------------------------------------------------------------
+START <html <Z> ATRIBUT </html><Z>
+
+ATRIBUT > </html> HTML </html>
+
+HTML <head </html> ATRIBUT </head></html>
+
+ATRIBUT > </head> HEAD </head>
+
+HEAD </head> </head> HTMLH e
+
+HTMLH <body </html> ATRIBUT </body></html>
+
+ATRIBUT > </body> BODY </body>
+
+BODY </body> </body> HTMLHB e
+
+HTMLHB </html> </html> FINISH e
