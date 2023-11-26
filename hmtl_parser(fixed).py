@@ -86,15 +86,15 @@ for k in range(len(listFile)):
             pass
 print(listFile2)
 
-# # clear comment
-# for n in range(len(listFile2)):
-#     elmt = listFile2[n]
-#     if("<!--" in elmt and "-->" in elmt):
-#         pass
-#     else:
-#         listFile3.append(elmt)
-# print("\n")
-# print(listFile3)
+for n in range(len(listFile2)):
+    elmt = listFile2[n]
+    if("<!--" in elmt and "-->" in elmt):
+        pass
+    else:
+        print(elmt)
+        listFile3.append(elmt)
+print("\n")
+print(listFile3)
 
 # dekomposisi open tag with att
 for j in range(len(listFile2)):

@@ -1,4 +1,4 @@
-START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT
+START FINISH ATRIBUT HEAD BODY HTML HTMLH HTMLHB CONTENT TABLE ERROR
 <html <head <body <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a
 <Z> <X> </link> </validLink> </a> <!----> </html> </head> </title> </script> </br> </em> </b> </abbr> </strong> </small> </hr> </div> </a> </h1> </h2> </h3> </h4> </h5> </h6> </p>
 START
@@ -49,6 +49,20 @@ FINISH <!---- <X> FINISH </comment><X>
 FINISH > </comment> FINISH e
 TABLE <!---- <X> TABLE </comment><X>
 TABLE > </comment> TABLE e
+
+HEAD X <X> HEAD <X>
+BODY X <X> BODY <X>
+TABLE X <X> TABLE <X>
+BODY X </body> ERROR e
+HTMLH X </html> ERROR e
+START X <Z> ERROR e
+HTML X </html> ERROR e
+HEAD X </head> ERROR e
+HTMLHB X </html> ERROR e
+FINISH X <Z> ERROR e
+TABLE X </table> ERROR e
+TABLE X </tr> ERROR e
+
 HEAD <title </head> ATRIBUT </title></head>
 ATRIBUT > </title> HEAD </title>
 HEAD </title> </title> HEAD e

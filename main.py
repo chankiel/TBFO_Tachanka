@@ -73,3 +73,6 @@ if(currentState==acceptingState):
     print("Accepted\n")
 else:
     print("Syntax Error\n")
+
+
+# START HTML HEAD BODY HTMLH HTMLHB FINISH TABLE TR
