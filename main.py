@@ -46,7 +46,7 @@ for pdaline in contentpdaline:
         pdaRules[key] = value
     linecount += 1
 
-arr = html_parser.parser("index.html")
+arr = html_parser.parser(htmlFile)
 for val in arr:
     if(val==""):
         continue
@@ -55,6 +55,9 @@ for val in arr:
     if(res == ("NO_STATE","NO_TOP")):
         res = pdaRules.get((currentState,val,"<X>"),("NO_STATE","NO_TOP"))
     if(res == ("NO_STATE","NO_TOP") or res==("ERROR","e")):
+        print("Current State:",currentState)
+        print("Input:",val)
+        print("Top:",top)
         break
     currentState = res[0]
     for elmt in reversed(res[1]):
