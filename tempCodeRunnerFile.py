@@ -62,7 +62,6 @@ for char in strFile:
                 tempTag += char
     else:
         tempTag += char
-listFile.append(tempTag)
 
 # clear whitespace behind ">"
 for i in range(len(listFile)):
@@ -81,13 +80,10 @@ for k in range(len(listFile)):
     if("<" == elmt[0] and ">" == elmt[-1]):
         listFile2.append(elmt)
     else:
-        listFile2.append("X")
-        # if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
-        #     listFile2.append("X")
-        # elif(k-1 < 0):
-        #     listFile2.append("X")
-        # else:
-        #     pass
+        if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
+            listFile2.append("X")
+        else:
+            pass
 print(listFile2)
 
 # # clear comment
@@ -95,7 +91,7 @@ print(listFile2)
 #     elmt = listFile2[n]
 #     if("<!--" in elmt and "-->" in elmt):
 #         pass
-#     else:jka
+#     else:
 #         listFile3.append(elmt)
 # print("\n")
 # print(listFile3)

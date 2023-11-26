@@ -49,20 +49,14 @@ FINISH <!---- <X> FINISH </comment><X>
 FINISH > </comment> FINISH e
 TABLE <!---- <X> TABLE </comment><X>
 TABLE > </comment> TABLE e
-
 HEAD X <X> HEAD <X>
 BODY X <X> BODY <X>
 TABLE X <X> TABLE <X>
+CONTENT X <X> CONTENT <X>
 BODY X </body> ERROR e
-HTMLH X </html> ERROR e
-START X <Z> ERROR e
-HTML X </html> ERROR e
 HEAD X </head> ERROR e
-HTMLHB X </html> ERROR e
-FINISH X <Z> ERROR e
 TABLE X </table> ERROR e
 TABLE X </tr> ERROR e
-
 HEAD <title </head> ATRIBUT </title></head>
 ATRIBUT > </title> HEAD </title>
 HEAD </title> </title> HEAD e

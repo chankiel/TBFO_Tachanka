@@ -72,10 +72,7 @@ def parser(filename):
         if("<" == elmt[0] and ">" == elmt[-1]):
             listFile2.append(elmt)
         else:
-            if((k-1 >= 0) and ("html" in listFile[k-1] or "head" in listFile[k-1] or "body" in listFile[k-1] or "table" in listFile[k-1] or "tr" in listFile[k-1] or "div" in listFile[k-1]) and ("strong" not in listFile[k-1])):
-                listFile2.append("X")
-            else:
-                pass
+            listFile2.append("X")
     # dekomposisi open tag with att
     for j in range(len(listFile2)):
         elmt = listFile2[j]
